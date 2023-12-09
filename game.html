@@ -4,23 +4,19 @@
 <html lang="en">
   <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><!--bootstrap css-->
-    <link rel="stylesheet" type="text/css" href="css/styles.css"/><!--this is the css we create-->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/><!--this is the css we create-->
     
     <title> Website Index</title>
-    
-  
-	
+    <meta name="author" content="Arnas Andrijaitis">
+	  <meta name="description" content="Game">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>
+  <body class="game">
     <!--navbar from bootstrap-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="#">Website</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+      
+        <ul class="navbar-nav">
 
             <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
             <a class="nav-link" href="form.index">Form <span class="sr-only"></span></a>
@@ -37,22 +33,27 @@
     <!--i cut pieces out of the bootstrap navbar to suit our website-->
 	<!--end of bootstrap navbar-->
     <!--i will need 9 img tags with an id each assigned to an array in the java, and the image changes based on the mathematical number-->
-   <form>
-    <input type="button" value="start game" onclick="startGame();startGameImages(i)">
-   </form>
    
-    <div id="gameImgContainer">
-      <img src="images/unknown.png" onclick="clickMe(0,1);checkImage(1)" id="button1" class="img"> 
-      <img src="images/unknown.png" onclick="clickMe(0,2);checkImage(2)" id="button2" class="img">
-      <img src="images/unknown.png" onclick="clickMe(0,3);checkImage(3)" id="button3" class="img">
+    <form class="gameUtilities">
+    <input type="button" value="start game" onclick="startGame();startGameImages(i);showGame();" class="startGameButton">
+   </form>
+   <div class="rounds">
+    <p id="round"></p>
+   </div>
+   
+   
+    <div id="gameImgContainer" style="visibility: hidden;">
+      <img src="images/unknown.png" onclick="clickMe(0,1);checkImage(1)" id="button1" class="gameImg"> 
+      <img src="images/unknown.png" onclick="clickMe(0,2);checkImage(2)" id="button2" class="gameImg">
+      <img src="images/unknown.png" onclick="clickMe(0,3);checkImage(3)" id="button3" class="gameImg">
       <br>
-      <img src="images/unknown.png" onclick="clickMe(0,4);checkImage(4)" id="button4" class="img">
-      <img src="images/unknown.png" onclick="clickMe(0,5);checkImage(5)" id="button5" class="img">
-      <img src="images/unknown.png" onclick="clickMe(0,6);checkImage(6)" id="button6" class="img">
+      <img src="images/unknown.png" onclick="clickMe(0,4);checkImage(4)" id="button4" class="gameImg">
+      <img src="images/unknown.png" onclick="clickMe(0,5);checkImage(5)" id="button5" class="gameImg">
+      <img src="images/unknown.png" onclick="clickMe(0,6);checkImage(6)" id="button6" class="gameImg">
       <br>
-      <img src="images/unknown.png" onclick="clickMe(0,7);checkImage(7)" id="button7" class="img">
-      <img src="images/unknown.png" onclick="clickMe(0,8);checkImage(8)" id="button8" class="img">
-      <img src="images/unknown.png" onclick="clickMe(0,9);checkImage(9)" id="button9" class="img">
+      <img src="images/unknown.png" onclick="clickMe(0,7);checkImage(7)" id="button7" class="gameImg">
+      <img src="images/unknown.png" onclick="clickMe(0,8);checkImage(8)" id="button8" class="gameImg">
+      <img src="images/unknown.png" onclick="clickMe(0,9);checkImage(9)" id="button9" class="gameImg">
     </div>
     <script type="text/javascript" src="js/externalIndexAndGame.js">
    </script>

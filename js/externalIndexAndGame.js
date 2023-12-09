@@ -1,11 +1,19 @@
 //declarations, these will be used for later as baseline numbers 
 let i = 0;
+var roundsCounter = 0;
+
+function rounds(){
+	document.getElementById("round").innterHTML = ("round",+(roundsCounter++));
+	
+}
 function resetChecks(){
 	check1 = 0;
 	check2 = 0;
 	check3 = 0;
 }
-
+function showGame(){
+	document.getElementById("gameImgContainer").style.visibility = "visible";
+}
 const buttons = [];// this is the array generated when the startGame() function is ran, it consists of random numbers.
 
 //this function here hides the images back to their original state when generating a new set of random numbers.
