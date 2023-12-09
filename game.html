@@ -24,37 +24,34 @@
             <a class="nav-link" href="game.html">Game <span class="sr-only"></span></a>
           
         </ul>
-        <!--<form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>-->
       </div>
     </nav>
     <!--i cut pieces out of the bootstrap navbar to suit our website-->
 	<!--end of bootstrap navbar-->
     <!--i will need 9 img tags with an id each assigned to an array in the java, and the image changes based on the mathematical number-->
-   
+   <br>
     <form class="gameUtilities">
     <input type="button" value="start game" onclick="startGame();startGameImages(i);showGame();" class="startGameButton">
    </form>
-   <div class="rounds">
-    <p id="round"></p>
-   </div>
+ 
    
    
     <div id="gameImgContainer" style="visibility: hidden;">
-      <img src="images/unknown.png" onclick="clickMe(0,1);checkImage(1)" id="button1" class="gameImg"> 
-      <img src="images/unknown.png" onclick="clickMe(0,2);checkImage(2)" id="button2" class="gameImg">
-      <img src="images/unknown.png" onclick="clickMe(0,3);checkImage(3)" id="button3" class="gameImg">
-      <br>
-      <img src="images/unknown.png" onclick="clickMe(0,4);checkImage(4)" id="button4" class="gameImg">
-      <img src="images/unknown.png" onclick="clickMe(0,5);checkImage(5)" id="button5" class="gameImg">
-      <img src="images/unknown.png" onclick="clickMe(0,6);checkImage(6)" id="button6" class="gameImg">
-      <br>
-      <img src="images/unknown.png" onclick="clickMe(0,7);checkImage(7)" id="button7" class="gameImg">
-      <img src="images/unknown.png" onclick="clickMe(0,8);checkImage(8)" id="button8" class="gameImg">
-      <img src="images/unknown.png" onclick="clickMe(0,9);checkImage(9)" id="button9" class="gameImg">
+      <img src="images/unknown.png" onclick="clickMe(0,1);checkImage(1)" id="button1" class="gameImg"> <!--top left img-->
+      <img src="images/unknown.png" onclick="clickMe(0,2);checkImage(2)" id="button2" class="gameImg"><!--top middle img-->
+      <img src="images/unknown.png" onclick="clickMe(0,3);checkImage(3)" id="button3" class="gameImg"><!--top right img-->
+        <br>
+      <img src="images/unknown.png" onclick="clickMe(0,4);checkImage(4)" id="button4" class="gameImg"><!--center left img-->
+      <img src="images/unknown.png" onclick="clickMe(0,5);checkImage(5)" id="button5" class="gameImg"><!--center middle img-->
+      <img src="images/unknown.png" onclick="clickMe(0,6);checkImage(6)" id="button6" class="gameImg"><!--center right img-->
+        <br>
+      <img src="images/unknown.png" onclick="clickMe(0,7);checkImage(7)" id="button7" class="gameImg"><!--bottom left img-->
+      <img src="images/unknown.png" onclick="clickMe(0,8);checkImage(8)" id="button8" class="gameImg"><!--bottom middle img-->
+      <img src="images/unknown.png" onclick="clickMe(0,9);checkImage(9)" id="button9" class="gameImg"><!--bottom right img-->    
     </div>
+    <div id="gameInfo">
+      <p id="gameInfo"></p><!--this displays some input so that the user has an idea of what is going on-->
+     </div>
     <script type="text/javascript" src="js/externalIndexAndGame.js">
    </script>
   </body>

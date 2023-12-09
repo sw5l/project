@@ -1,11 +1,8 @@
 //declarations, these will be used for later as baseline numbers 
 let i = 0;
-var roundsCounter = 0;
 
-function rounds(){
-	document.getElementById("round").innterHTML = ("round",+(roundsCounter++));
-	
-}
+
+
 function resetChecks(){
 	check1 = 0;
 	check2 = 0;
@@ -25,6 +22,7 @@ function startGameImages(i){
 }//click start to begin the game's main function
 function startGame(){
 	resetChecks();
+	document.getElementById("gameInfo").innerHTML=""//this reset the text back to nothing.
 	
 //make an array with 9 values
 //i learned indepth about arrays from w3schools https://www.w3schools.com/js/js_arrays.asp
@@ -81,7 +79,7 @@ function checkImage(i){//when this function is ran, it will assign values to che
 		if(check1==check2){
 			
 			}else if(check1 != check2){
-				alert("Oops, they don't match!")
+				document.getElementById("gameInfo").innerHTML="Oops, they don't match!"
 				resetChecks();
 				startGameImages(i);
 				}
@@ -90,9 +88,9 @@ function checkImage(i){//when this function is ran, it will assign values to che
 		check3 = document.getElementById("button"+i).alt;
 							
 		if(check2==check3){
-			alert("you win!")	
+			document.getElementById("gameInfo").innerHTML="You win!<br>You may press everything to see what they are."	
 			}else if(check2 != check3){
-				alert("Oops, they don't match!")
+				document.getElementById("gameInfo").innerHTML="Oops, they don't match!"
 				resetChecks();
 				startGameImages(i);	
 			}

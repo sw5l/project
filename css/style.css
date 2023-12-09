@@ -10,6 +10,7 @@
 /*this will be the background for my website*/
 body.game{
     background-color:rgb(137, 157, 247);
+    text-align: center;
 
 }
 /* responsive design for the actual game itself on thr webpage */
@@ -24,7 +25,7 @@ body.game{
 
 @media screen and (max-width: 1000px) {
     .navbar-nav{
-       width:100%;
+       width:100%; /* The width is 100%, when the viewport is 800px or smaller */
        display:inline-block;
        }
        a.nav-link{
@@ -56,7 +57,8 @@ body.game{
 }
 #gameImgContainer{
     border: 4px solid black;
-    background-color: aqua;
+    background-color: rgb(112, 137, 250)
 }
+
 
 
