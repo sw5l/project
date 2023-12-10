@@ -10,6 +10,7 @@ function resetChecks(){
 }
 function showGame(){
 	document.getElementById("gameImgContainer").style.visibility = "visible";
+	document.getElementById("information").style.display = "none"
 }
 const buttons = [];// this is the array generated when the startGame() function is ran, it consists of random numbers.
 
