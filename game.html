@@ -19,8 +19,8 @@
         <ul class="navbar-nav">
 
             <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
-            <a class="nav-link" href="form.index">Form <span class="sr-only"></span></a>
-            <a class="nav-link" href="gallery.index">Gallery <span class="sr-only"></span></a>
+            <a class="nav-link" href="form.html">Form <span class="sr-only"></span></a>
+            <a class="nav-link" href="gallery.html">Gallery <span class="sr-only"></span></a>
             <a class="nav-link" href="game.html">Game <span class="sr-only"></span></a>
           
         </ul>
@@ -30,7 +30,7 @@
 	  <!--end of bootstrap navbar-->
     <!--i will need 9 img tags with an id each assigned to an array in the java, and the image changes based on the mathematical number-->
    <br>
-   <p id="information">This game is an image guessing game, you must get 3 correct images in a row to win,to start, press "start game"</p>
+   <p id="information" class="textGame">This game is an image guessing game, you must get 3 correct images in a row to win,to start, press "start game"</p>
     <form class="gameUtilities">
       <input type="button" value="start game" onclick="startGame();startGameImages(i);showGame();" class="startGameButton">
     </form>
@@ -49,7 +49,7 @@
       <img src="images/unknown.png" onclick="clickMe(0,9);checkImage(9)" id="button9" class="gameImg"><!--bottom right img-->    
     </div>
     <div id="gameInfo">
-      <p id="gameInfo"></p><!--this displays some input so that the user has an idea of what is going on-->
+      <p id="gameInfo" class="textGame"></p><!--this displays some input so that the user has an idea of what is going on-->
     </div>
     <script type="text/javascript" src="js/externalIndexAndGame.js"></script>
   </body>

@@ -1,4 +1,4 @@
-
+/*ARNAS ANDRIJAITIS CSS*/
 /*BOOTSTRAP CSS*/
 .navbar{
     background-color: #777799;
@@ -8,7 +8,7 @@
 
 /*END OF BOOTSTRAP CSS*/
 /*this will be the background for my website*/
-body.game{
+.game{
     background-color:rgb(137, 157, 247);
     text-align: center;
 
@@ -59,6 +59,7 @@ body.game{
     border: 4px solid black;
     background-color: rgb(112, 137, 250)
 }
-
-
-
+.textGame{
+    color: white;
+}
+/* END OF ARNAS ANDRIJAITIS CSS*/
